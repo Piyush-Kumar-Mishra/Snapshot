@@ -27,15 +27,16 @@ Snapshot transforms a portrait video into a people-focused, shareable collage:
 
 #
 
-### ⧉ Key Features
+### 🛠️ Tech Stack
 
-- **On-device processing** — video frames, face detection, identity matching, and collage generation run locally on the device.
-- **Appearance tracking** — separates continuous appearances when a person leaves the frame or a scene transition occurs.
-- **Multi-person support** — tracks and counts people who appear together in the same frame.
-- **Best-shot selection** — ranks candidate face shots by pose, sharpness, eye openness, smile probability, and framing.
-- **Vertical collage** — generates a `1080 × 1920` collage with layouts that adapt to the number of people found.
-- **Analysis history** — persists prior analyses, collage files, and person metadata locally with Room.
-- **Save and share** — exports the collage to the device gallery or Android’s system share sheet.
+| Kotlin | Jetpack Compose | Material 3 | StateFlow |
+|--------|-----------------|------------|-----------|
+
+| Coroutines | Flow | Google ML Kit | TensorFlow Lite | Room |
+|-------------------|------|---------------|------------------|------|
+
+| Hilt | Coil | MVVM |
+|------|------|------|
 
 </td>
 
@@ -47,16 +48,18 @@ Snapshot transforms a portrait video into a people-focused, shareable collage:
 </tr>
 </table>
 
-### 🛠️ Tech Stack
+### ⧉ Key Features
 
-| Kotlin | Jetpack Compose | Material 3 | StateFlow |
-|--------|-----------------|------------|-----------|
+- **On-device processing** — video frames, face detection, identity matching, and collage generation run locally on the device.
+- **Appearance tracking** — separates continuous appearances when a person leaves the frame or a scene transition occurs.
+- **Multi-person support** — tracks and counts people who appear together in the same frame.
+- **Best-shot selection** — ranks candidate face shots by pose, sharpness, eye openness, smile probability, and framing.
+- **Vertical collage** — generates a `1080 × 1920` collage with layouts that adapt to the number of people found.
+- **Analysis history** — persists prior analyses, collage files, and person metadata locally with Room.
+- **Save and share** — exports the collage to the device gallery or Android’s system share sheet.
 
-| Coroutines | Flow | Google ML Kit | TensorFlow Lite | Room |
-|-------------------|------|---------------|------------------|------|
 
-| Hilt | Coil | MVVM |
-|------|------|------|
+
 ### ⧉ How It Works
 
 1. Choose a video from the device.
