@@ -1,3 +1,4 @@
+
 # Snapshot
 
 ### ⧉ The Problem
@@ -9,8 +10,13 @@ This makes it difficult to turn a video into a clean, shareable recap that shows
 #
 
 ### ⧉ The Solution
-
 Snapshot transforms a portrait video into a people-focused, shareable collage:
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+### ✨ Features
 
 - Extracts video frames and detects faces entirely on-device
 - Tracks continuous appearances, including multiple people in the same frame
@@ -18,12 +24,6 @@ Snapshot transforms a portrait video into a people-focused, shareable collage:
 - Scores detected faces to select the best representative shot for each person
 - Creates a vertical, Instagram Story-style collage with appearance counts
 - Saves analyses locally and lets users save or share the finished collage
-
-| Kotlin | Jetpack Compose | Material 3 | ML Kit |
-| ------ | --------------- | ---------- | ------ |
-
-| TensorFlow Lite | Room | MVVM | Kotlin Coroutines | Hilt |
-| --------------- | ---- | ---- | ----------------- | ---- |
 
 #
 
@@ -37,8 +37,26 @@ Snapshot transforms a portrait video into a people-focused, shareable collage:
 - **Analysis history** — persists prior analyses, collage files, and person metadata locally with Room.
 - **Save and share** — exports the collage to the device gallery or Android’s system share sheet.
 
-#
+</td>
 
+<td width="40%" align="center" valign="top">
+
+<img width="400" alt="Snapshot App" src="https://github.com/user-attachments/assets/ab13c3c6-6d8c-43fd-a5b1-0753e856c00a" />
+
+</td>
+</tr>
+</table>
+
+### 🛠️ Tech Stack
+
+| Kotlin | Jetpack Compose | Material 3 | StateFlow |
+|--------|-----------------|------------|-----------|
+
+| Coroutines | Flow | Google ML Kit | TensorFlow Lite | Room |
+|-------------------|------|---------------|------------------|------|
+
+| Hilt | Coil | MVVM |
+|------|------|------|
 ### ⧉ How It Works
 
 1. Choose a video from the device.
